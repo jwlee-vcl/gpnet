@@ -1,0 +1,22 @@
+from .base_options_gpnet import BaseOptions
+
+class TestOptions(BaseOptions):
+    def initialize(self):
+        BaseOptions.initialize(self)
+        # self.parser.add_argument('--ntest', type=int, default=float("inf"), help='# of test examples.')
+        # self.parser.add_argument('--results_dir', type=str, default='./results/', help='saves results here.')
+        # self.parser.add_argument('--aspect_ratio', type=float, default=1.0, help='aspect ratio of result images')
+        # self.parser.add_argument('--phase', type=str, default='test', help='train, val, test, etc')
+        # self.parser.add_argument('--which_epoch', type=str, default='latest', help='which epoch to load? set to latest to use latest cached model')
+        # self.parser.add_argument('--how_many', type=int, default=50, help='how many test images to run')
+
+        # self.parser.add_argument('--dataset', type=str, default='GoogleStreetView', help='Dataset for training')
+        
+        # self.parser.add_argument('--n_frames', type=int, default=256, help='# of frame candidates')
+        self.parser.add_argument('--n_frames', type=int, default=16, help='# of frame candidates')
+
+        # self.parser.add_argument('--k', type=int, default=8, help='how many top candidate select')
+        self.parser.add_argument('--k', type=int, default=1, help='how many top candidate select')
+        self.parser.add_argument('--use_act_score', type=bool, default=True, help='using or not activation map score')
+
+        self.isTrain = False
