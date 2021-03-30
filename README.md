@@ -4,6 +4,8 @@
 
 [dataset download](https://drive.google.com/file/d/1opDR_j-9y4TY82ZscBb-xYAoMkTocAOp/view?usp=sharing)
 
+[pre-trained weight](https://drive.google.com/file/d/1Hct1ES7XUael6vr2YsD7TR9QtRNNt0y4/view?usp=sharing)
+
 ## To Do
 1. update training codes
 2. upload pretrained weights
